@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WWD</string>
+    <string name="action_settings">Settings</string>
+    <string name="person_image">person image</string>
+    <string name="location">location</string>
+    <string name="phone">phone</string>
+    <string name="email">email</string>
+</resources>
