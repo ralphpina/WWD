@@ -12,6 +12,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+
 import net.ralphpina.wwd.utils.DividerItemDecoration;
 
 import org.json.JSONArray;
@@ -132,6 +134,7 @@ public class MainActivity extends AppCompatActivity {
                 mCity.setText(object.getString("$city"));
                 mTelephone.setText(object.getString("phone"));
                 mEmail.setText(object.getString("$email"));
+                Picasso.with(MainActivity.this).load(object.getString("photo_url")).into(mProfileImage);
             } catch (JSONException e) {
                 e.printStackTrace();
             }
